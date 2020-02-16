@@ -12,7 +12,7 @@ app.use(cors());
 
 //conectar ao banco de dados
 mongoose.connect(
-    'mongodb+srv://deploy:5S#525#463rZSjbj@mongoassistenciatecnica-h2nhv.mongodb.net/test?retryWrites=true&w=majority',
+    process.env.URL_MONGO,
     { useNewUrlParser: true, useUnifiedTopology: true });
 
 //conectar a todos os models
